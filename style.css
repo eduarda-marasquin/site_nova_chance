@@ -1,0 +1,274 @@
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+.titulo{
+    display: flex;
+    align-items: center;
+}
+
+.titulo h1{
+    padding-left: 30px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    padding: 16px 0 0;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #BFAB93;
+}
+
+#campo-pesquisa::placeholder{
+    color: #D9C5AD;
+}
+
+#botao-pesquisa, .botao-contato, #botao-enviar-mensagem{
+    background-color: #BFAB93;
+    color: #ffff;
+    border-color: #BFAB93;
+}
+
+#botao-pesquisa:hover, .botao-contato:hover,  #botao-enviar-mensagem:hover{
+    background-color: #908170;
+    color: #fff;
+    border-color: #908170;
+}
+
+
+
+.titulo img{
+    width:60px;
+}
+
+form {
+    display: flex;
+    gap: 8px;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+form input {
+    flex-grow: 1;
+}
+
+
+.menu{
+    padding-left: 100px;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    color: #D9C5AD;
+    padding: 16px;
+    position: relative;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.menu li:hover{
+    background-color: #f2eadf5f;
+    transition-duration: 500ms;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+
+.submenu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 10;
+    padding: 8px 0;
+}
+
+.submenu li {
+    list-style: none;
+    
+}
+
+.submenu li a {
+    display: block;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    text-decoration: none;
+    color: #D9C5AD;
+    border-bottom: none;
+}
+
+.submenu li a:hover{
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+.botao-menu{
+    display: none;
+}
+
+h2{
+    color: #BFAB93;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    z-index: 20;
+    text-shadow: 0 1px 2px rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#historia-max {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    z-index: 20;
+    text-shadow: 0 1px 2px rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+#animais-adocao {
+    position: absolute;
+    bottom: 250px;
+    left: 200px;
+    z-index: 20;
+    text-shadow: 0 1px 2px rgba(0,0,0,1);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.carousel-inner img {
+    height: 600px;     /* ou qualquer valor que funcione bem */
+    width: 100%;
+    object-fit: cover; /* corta imagem mantendo o centro visível */
+    display: block;
+}
+
+.card{
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-bottom: 26px;
+}
+
+.card img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    max-height: 208.44px;
+    height: 100%;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title img{
+    width: 40px;
+}
+
+.favorito{
+    cursor: pointer;
+    width: 40px;
+}
+
+
+
+#contato form{
+    display: block;
+}
+
+#contato input{
+    margin-bottom: 8px;
+    width: 350px;
+}
+
+
+#contato textarea{
+    resize: none;
+    height: 180px;
+    width: 350px;
+}
+
+#contato button{
+    margin-top: 10px;
+    width: 350px;
+}
+
+
+.redes-sociais img{
+    height: 24px;
+}
+
+.redes-sociais li{
+    display: inline;
+    margin-right: 8px;
+}
+
+
+.redes-sociais a{
+    text-decoration: none;
+}
+
+#contato, footer{
+    background-color: #F2EADF;
+}
+
+#contato h2, #contato h3{
+    color:#908170;
+}
+
+#contato .container{
+    display: block;
+}
+
+.metodos-contato{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer p{
+    color: #908170;
+    padding: 30px 0 0px 0;
+    margin-bottom: 0;
+    text-align: center;
+}

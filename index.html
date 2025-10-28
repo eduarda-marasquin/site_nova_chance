@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nova chance</title>
+    <link rel="icon" href="figs/Captura de tela 2025-08-01 142030.png" type="image/png">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="titulo">
+                <a>
+                    <img id="logo" src="figs/Captura de tela 2025-08-01 142030.png">
+                </a>
+                <h1>
+                    Nova chance
+                </h1>
+            </div>
+            <form>
+                <input id="campo-pesquisa" class="form-control" type="search" placeholder="Busque no site">
+                <button id="botao-pesquisa" class="btn" type="submit">Pesquisar</button>
+            </form>
+        </div>
+        <div class="botao-menu">
+            <button class="btn" type="button">Abrir Menu</button>
+        </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Informações
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Sobre a ONG</a>
+                        </li>
+                        <li>
+                            <a href="#">Nossas ações</a>
+                        </li>
+                        <li>
+                            <a href="#">Nosso abrigo</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+                <li>
+                    Como ajudar
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Ítens em falta no abrigo</a>
+                        </li>
+                        <li>
+                            <a href="#">Voluntariado</a>
+                        </li>
+                        <li>
+                            <a href="#">Adote</a>
+                        </li>
+                    </ul>
+                    
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container-carousel">
+        <div id="carousel-animais" class="carousel carousel-fade slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img class="d-block w-100" id="voluntarios" src="https://images.pexels.com/photos/7469274/pexels-photo-7469274.jpeg" alt="">
+                <div class="carousel-caption rounded-3 d-flex flex-column align-items-center p-3">
+                    <h5>
+                        <strong>Cuidar, amar e transformar vidas</strong>
+                    </h5>
+                    <p>
+                            Todos os dias, nossos voluntários trabalham para dar uma nova chance a cães e gatos que um dia foram esquecidos. Aqui, cada resgate é o começo de uma nova história de amor.
+                    </p>
+                    <button class="btn btn-light mt-3" type="button">Saiba mais sobre a ONG</button>
+
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item"><img class="d-block w-100" id="max" src="figs/Captura de tela 2025-08-01 135855.png" alt="">
+                <div class="carousel-caption rounded-3 d-flex flex-column align-items-center p-3" id="historia-max">
+                    <h5>
+                        <strong>A adoção salva vidas </strong>
+                    </h5>
+                    <p>
+                        <strong>Conheça a história de Max:</strong> ele foi encontrado abandonado nas ruas, com fraturas nas costelas. A dor o impedia de se locomover por longas distâncias e, com isso, acabou ficando desnutrido.
+                        <br>
+                        <br>
+                        Após um morador da região entrar em contato com a nossa ONG, Max recebeu cuidados da nossa equipe veterinária e, aos poucos, recuperou sua saúde.
+                        <br>
+                        <br>
+                        Hoje, ele vive com uma família amorosa e responsável — e tem um final feliz que inspira todos nós.
+                    </p>
+                    <button class="btn btn-light mt-3" type="button">Conheça outras histórias</button>
+                </div>
+            </div>
+            <div data-bs-interval="3000" class="carousel-item"><img class="d-block w-100" id="cachorros-adocao" src="https://images.pexels.com/photos/12195409/pexels-photo-12195409.jpeg" alt="">
+            <div class="carousel-caption rounded-3 d-flex flex-column align-items-center p-3" id="animais-adocao">
+                <h5><strong>Ajude a transformar vidas</strong></h5>
+                <p>A adoção responsável permite que muitos animais encontrem o amor e o cuidado que merecem. 
+                Cada gesto de compaixão faz a diferença — adote, apadrinhe ou contribua com a nossa causa.</p>
+
+                <button class="btn btn-light mt-3">Adote agora</button>
+            </div>
+            </div>
+        </div>
+        <button data-bs-target="#carousel-animais" data-bs-slide="prev" class="carousel-control-prev" type="button">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button data-bs-target="#carousel-animais" data-bs-slide="next" class="carousel-control-next" type="button">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button data-bs-target="#carousel-animais" class="active" type="button" data-bs-slide-to="0"></button>
+            <button data-bs-target="#carousel-animais" type="button" data-bs-slide-to="1"></button>
+            <button data-bs-target="#carousel-animais" type="button" data-bs-slide-to="2"></button>
+        </div>
+    </div>
+    </div>
+    <h2 class="text-center fs-1 mb-3">Conheça nossos animais para adoção:</h2>
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/Captura de tela 2025-08-14 090234.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Paçoca</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">O Paçoca é um cachorro brincalhão, que adora água. Para o Paçoca, tomar banho é uma festa. Ele é ideal para famílias com crianças, e será o melhor amigo delas.</p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte pequeno</footer>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/pexels-mikegles-16622679.jpg" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Jorge</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">Jorge é um cachorro calmo, com muito amor para dar, e apesar da idade, 
+                                gosta muito de passear e brincar. Ele será o seu companheiro para todos os momentos.
+                            </p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte médio</footer>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/pexels-alexandru-rotariu-230845-733416.jpg" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Júpiter</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">Júpiter é uma filhote bem sociável e amigável, que gosta de ser o centro das atenções. Ela adora brincar com crianças, e conquista o coração de todos que encontra.</p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte médio</footer>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/pexels-cecidgondeles-5270678.jpg" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Amora</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">Amora, apesar de ter deficiência auditiva, adora estar sempre por perto e conversar com você. Ela adora ser útil e ajudar nas tarefas básicas, e com certeza vai roubar o seu coração. </p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte Grande</footer>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/Captura de tela 2025-08-14 090252.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Clara</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">Clara é muito dócil e calma, sendo ideal para quem mora em apartamento. Sua atividade favorita é tirar sonecas durante o dia, e quando não está dormindo, faz tudo por um cafuné. </p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte médio</footer>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="figs/pexels-sharon-snider-2339082-15175665.jpg" alt="">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Café</h4>
+                                <div class="favorito">
+                                    <a class="botao-favorito"> 
+                                        <svg class="icone-favorito" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                            <g id="SVGRepo_iconCarrier"> 
+                                            <path fill-rule="evenodd" clip-rule="evenodd" 
+                                            d="M12 6.00019C10.2006 3.90317 7.19377 3.2551 4.93923 5.17534
+                                            C2.68468 7.09558 2.36727 10.3061 4.13778 12.5772
+                                            C5.60984 14.4654 10.0648 18.4479 11.5249 19.7369
+                                            C11.6882 19.8811 11.7699 19.9532 11.8652 19.9815
+                                            C11.9483 20.0062 12.0393 20.0062 12.1225 19.9815
+                                            C12.2178 19.9532 12.2994 19.8811 12.4628 19.7369
+                                            C13.9229 18.4479 18.3778 14.4654 19.8499 12.5772
+                                            C21.6204 10.3061 21.3417 7.07538 19.0484 5.17534
+                                            C16.7551 3.2753 13.7994 3.90317 12 6.00019Z" stroke="#F25050" stroke-width="1" stroke-linejoin="round"></path> </g></svg>
+                                    
+                                    </a>
+                                </div>
+                            </div>
+                            <h5 class="card-subtitle"></h5>
+                            <p class="card-text">Café é um filhote cheio de energia e curiosidade para conhecer o mundo. Por ser um filhote, ele precisa de bastante paciência, mas garantimos que será um prazer conhecê-lo.</p>
+                            <button class="btn botao-contato">Entre em contato</button>
+                        </div>
+                        <footer class="card-footer">Porte pequeno</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="contato">
+            <h2 class="m-5 mb-0">Contato</h2>
+            <div class="metodos-contato">
+                <div>
+                    <h3>Fale conosco</h3>
+                    <form>
+                        <input class="form-control" type="text" placeholder="Seu nome" required />
+                        <input class="form-control" type="email" placeholder="Seu email" required/>
+                        <input class="form-control" type="tel" placeholder="Seu telefone (opcional)" />
+                        <textarea class="form-control" placeholder="Sua mensagem" required></textarea>
+                        <button id="botao-enviar-mensagem" class="btn" type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div>
+                    <h3>Nos acompanhe</h3>
+                    <ul class="redes-sociais">
+                        <li>
+                            <a href="#" title="Siga-nos no Instagram">
+                                <img src="figs/instagram.png" alt="Logo do Instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Siga-nos no Facebook">
+                                <img src="figs/facebook.png" alt="Logo do Facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Visite nosso canal no Youtube">
+                                <img src="figs/youtube.png" alt="Logo do Youtube" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha até nós</h3>
+                    <p>
+                        Rua Bootstrap n°124, Vila HTML - Porto Alegre - RS
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>
+                    &copy; Nova chance - Todos os direitos reservados - 2025
+                </p>
+            </div>
+        </footer>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
